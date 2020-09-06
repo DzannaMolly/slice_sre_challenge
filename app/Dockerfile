@@ -10,5 +10,5 @@ RUN apt-get update && \
     bundle install --jobs 20
 
 CMD ["puma", "--config",  "puma.rb", \
-             "--bind",    "tcp://localhost:4567", \
+             "--bind",    "tcp://0.0.0.0:4567", \
              "--log-requests"]
